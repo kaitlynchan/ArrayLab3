@@ -33,6 +33,12 @@ public class ArraysLab3
 	{
 		assert (arr.length > 0);
 		
+		int [] appendArr = new int [arr.length+1];
+		for (int i = 0; i < appendArr.length; i++){
+			appendArr[i] = arr[i];
+		}
+		appendArr[appendArr.length] = num;
+		return appendArr;
 	}
 	
 	/*
